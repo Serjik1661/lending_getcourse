@@ -55,8 +55,8 @@
 .hero-bacteria {
   position: absolute;
   z-index: 1;
-  top: clamp(4px, 2.4vw, 30px);
-  right: clamp(-10px, 0.5vw, 10px);
+  top: clamp(-10px, 1vw, 18px);
+  right: clamp(-120px, -5vw, -70px);
   width: clamp(170px, 15vw, 220px);
   padding: 0;
   border-radius: 0;
