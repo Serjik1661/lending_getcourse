@@ -14,30 +14,55 @@
   border-radius: var(--radius-xl);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.legal-card * {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .legal-card h1 {
+  display: block;
   font-size: clamp(34px, 5vw, 58px);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-wrap: wrap;
+  hyphens: auto;
 }
 
 .legal-card h2 {
+  display: block;
   margin-top: 34px;
   font-size: clamp(22px, 3vw, 32px);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-wrap: wrap;
+  hyphens: auto;
 }
 
 .legal-card h3 {
+  display: block;
   margin-top: 16px;
   color: var(--muted);
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.65;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-wrap: wrap;
+  hyphens: auto;
 }
 
 .legal-card p,
 .legal-card li {
   margin-top: 14px;
   color: var(--muted);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-wrap: wrap;
+  hyphens: auto;
 }
 
 .legal-card ul {
@@ -102,4 +127,54 @@
   height: min(56vw, 420px);
   min-height: 280px;
   border: 0;
+}
+
+@media (max-width: 520px) {
+  .legal-main {
+    padding: 34px 0 58px;
+  }
+
+  .legal-container {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
+  .legal-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 26px 18px;
+  }
+
+  .legal-card h1 {
+    max-width: min(100%, 16ch);
+    font-size: clamp(27px, 8.4vw, 33px);
+    line-height: 1.12;
+    letter-spacing: -0.028em;
+  }
+
+  .legal-card h2 {
+    max-width: min(100%, 22ch);
+    font-size: clamp(21px, 6.2vw, 25px);
+    line-height: 1.2;
+  }
+
+  .legal-card h3 {
+    max-width: min(100%, 32ch);
+    font-size: clamp(0.98rem, 4.8vw, 1.08rem);
+    line-height: 1.58;
+  }
+
+  .legal-card p,
+  .legal-card li {
+    max-width: min(100%, 34ch);
+    font-size: clamp(0.98rem, 4.7vw, 1.06rem);
+    line-height: 1.58;
+  }
+
+  .legal-note {
+    max-width: min(100%, 34ch);
+    padding: 16px;
+    font-size: clamp(0.98rem, 4.8vw, 1.12rem);
+    line-height: 1.35;
+  }
 }
