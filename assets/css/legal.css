@@ -1,0 +1,105 @@
+.legal-main {
+  padding: clamp(44px, 6vw, 84px) 0;
+  background: var(--green-50);
+}
+
+.legal-container {
+  width: min(100% - 40px, 980px);
+  margin-inline: auto;
+}
+
+.legal-card {
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-card);
+}
+
+.legal-card h1 {
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+.legal-card h2 {
+  margin-top: 34px;
+  font-size: clamp(22px, 3vw, 32px);
+}
+
+.legal-card h3 {
+  margin-top: 16px;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.legal-card p,
+.legal-card li {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.legal-card ul {
+  padding-left: 22px;
+}
+
+.legal-back {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--green-700);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.legal-note {
+  margin: 24px 0;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--beige-100);
+  color: var(--green-900);
+  font-weight: 850;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(47, 109, 60, 0.18);
+  border-radius: 12px;
+  color: var(--green-900);
+  font-weight: 850;
+  background: rgba(247, 248, 244, 0.8);
+  transition: transform 220ms var(--ease), background 220ms var(--ease);
+}
+
+.contact-links a:hover {
+  transform: translateY(-2px);
+  background: var(--green-100);
+}
+
+.contact-map-wrap {
+  margin-top: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-map {
+  display: block;
+  width: 100%;
+  height: min(56vw, 420px);
+  min-height: 280px;
+  border: 0;
+}

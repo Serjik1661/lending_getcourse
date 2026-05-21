@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Geologica";
+  src: url("../fonts/geologica-cyrillic.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/mulish-cyrillic.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --green-950: #10271a;
+  --green-900: #173c25;
+  --green-800: #245732;
+  --green-700: #2f6d3c;
+  --green-600: #3f7f46;
+  --green-100: #dfeede;
+  --green-50: #f1f7ed;
+  --beige-50: #fffaf0;
+  --beige-100: #f7eedb;
+  --beige-200: #ead9ba;
+  --orange-600: #ff970f;
+  --orange-700: #ea7f00;
+  --ink: #172017;
+  --muted: #5f6d5b;
+  --line: rgba(47, 109, 60, 0.16);
+  --white: #ffffff;
+  --font-display: "Geologica", "Mulish", Arial, sans-serif;
+  --font-body: "Mulish", Arial, sans-serif;
+  --container: 1240px;
+  --section-y: clamp(56px, 7vw, 104px);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --shadow-soft: 0 18px 48px rgba(40, 75, 33, 0.10);
+  --shadow-card: 0 12px 32px rgba(43, 76, 37, 0.08);
+  --shadow-cta: 0 18px 36px rgba(255, 151, 15, 0.26);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
