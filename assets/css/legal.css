@@ -25,20 +25,20 @@
 .legal-card h1 {
   display: block;
   font-size: clamp(34px, 5vw, 58px);
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
   text-wrap: wrap;
-  hyphens: auto;
 }
 
 .legal-card h2 {
   display: block;
   margin-top: 34px;
   font-size: clamp(22px, 3vw, 32px);
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
   text-wrap: wrap;
-  hyphens: auto;
 }
 
 .legal-card h3 {
@@ -49,20 +49,20 @@
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.65;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
   text-wrap: wrap;
-  hyphens: auto;
 }
 
 .legal-card p,
 .legal-card li {
   margin-top: 14px;
   color: var(--muted);
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
   text-wrap: wrap;
-  hyphens: auto;
 }
 
 .legal-card ul {
@@ -91,7 +91,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .contact-links a {
@@ -129,6 +129,99 @@
   border: 0;
 }
 
+.contact-card {
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.contact-heading {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-heading h1 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.contact-heading p {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  font-weight: 750;
+  line-height: 1.45;
+  text-wrap: wrap;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.contact-panel {
+  padding: 18px;
+  border: 1px solid rgba(47, 109, 60, 0.14);
+  border-radius: 18px;
+  background: rgba(247, 248, 244, 0.72);
+}
+
+.contact-panel-wide {
+  grid-column: 1 / -1;
+}
+
+.contact-card .contact-panel h2 {
+  margin: 0 0 12px;
+  color: var(--green-900);
+  font-size: clamp(20px, 2.3vw, 26px);
+  line-height: 1.08;
+}
+
+.contact-list {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-list-seller {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: minmax(92px, 0.55fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  padding-top: 10px;
+  border-top: 1px solid rgba(47, 109, 60, 0.1);
+  color: var(--green-900);
+}
+
+.contact-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.contact-row span {
+  color: var(--green-900);
+  font-size: 0.9rem;
+  font-weight: 950;
+}
+
+.contact-row a,
+.contact-row strong {
+  color: var(--green-900);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.28;
+}
+
+.contact-row a {
+  text-decoration: none;
+}
+
+.contact-row a:hover {
+  color: var(--green-700);
+}
+
 @media (max-width: 520px) {
   .legal-main {
     padding: 34px 0 58px;
@@ -143,38 +236,134 @@
     width: 100%;
     max-width: 100%;
     padding: 26px 18px;
+    overflow-wrap: anywhere;
   }
 
   .legal-card h1 {
-    max-width: min(100%, 16ch);
-    font-size: clamp(27px, 8.4vw, 33px);
-    line-height: 1.12;
-    letter-spacing: -0.028em;
+    width: 100%;
+    max-inline-size: 100%;
+    max-width: 100%;
+    font-size: clamp(21px, 7vw, 28px);
+    line-height: 1.08;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .legal-card .legal-title-compact {
+    max-width: 100%;
+    font-size: clamp(21px, 6.8vw, 27px);
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
   }
 
   .legal-card h2 {
-    max-width: min(100%, 22ch);
-    font-size: clamp(21px, 6.2vw, 25px);
-    line-height: 1.2;
+    width: 100%;
+    max-inline-size: 100%;
+    max-width: 100%;
+    font-size: clamp(18px, 5.8vw, 23px);
+    line-height: 1.16;
+    overflow-wrap: anywhere;
   }
 
   .legal-card h3 {
-    max-width: min(100%, 32ch);
-    font-size: clamp(0.98rem, 4.8vw, 1.08rem);
-    line-height: 1.58;
+    width: 100%;
+    max-inline-size: 100%;
+    max-width: 31ch;
+    font-size: 0.95rem;
+    line-height: 1.52;
+    overflow-wrap: anywhere;
   }
 
   .legal-card p,
   .legal-card li {
-    max-width: min(100%, 34ch);
-    font-size: clamp(0.98rem, 4.7vw, 1.06rem);
-    line-height: 1.58;
+    width: 100%;
+    max-inline-size: 100%;
+    max-width: 31ch;
+    font-size: 0.95rem;
+    line-height: 1.52;
+    overflow-wrap: anywhere;
   }
 
   .legal-note {
-    max-width: min(100%, 34ch);
+    max-width: 31ch;
     padding: 16px;
-    font-size: clamp(0.98rem, 4.8vw, 1.12rem);
+    font-size: clamp(0.95rem, 4.5vw, 1.06rem);
     line-height: 1.35;
+  }
+
+  .contact-card {
+    padding: 22px 16px;
+  }
+
+  .contact-heading {
+    gap: 8px;
+  }
+
+  .contact-heading h1 {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+
+  .contact-heading p {
+    max-width: 28ch;
+    font-size: 0.98rem;
+    line-height: 1.38;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .contact-links a {
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    min-width: 0;
+    padding: 0;
+    border-radius: 14px;
+  }
+
+  .contact-links img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .contact-panel {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .contact-card .contact-panel h2,
+  .contact-card > h2 {
+    font-size: 21px;
+  }
+
+  .contact-list-seller {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding-top: 9px;
+  }
+
+  .contact-row a,
+  .contact-row strong {
+    font-size: 0.98rem;
+  }
+
+  .contact-map {
+    min-height: 230px;
   }
 }
