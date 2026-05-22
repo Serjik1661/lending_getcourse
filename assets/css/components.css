@@ -181,6 +181,13 @@
   margin-top: 18px;
 }
 
+.social-title {
+  margin-top: 18px;
+  color: var(--white);
+  font-size: 0.94rem;
+  font-weight: 850;
+}
+
 .social-links a {
   display: inline-flex;
   align-items: center;

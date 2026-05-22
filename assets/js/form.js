@@ -99,7 +99,9 @@
 
       saveDemoLead({ name, phone, email, message });
 
-      if (status) status.textContent = "Заявка сохранена в demo-режиме. Сейчас откроется страница благодарности.";
+      if (status) {
+        status.textContent = "Заявка сохранена в demo-режиме. Сейчас откроется страница благодарности.";
+      }
 
       const params = new URLSearchParams({ name });
       window.setTimeout(() => {

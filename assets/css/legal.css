@@ -94,6 +94,13 @@
   margin-top: 16px;
 }
 
+.contact-social-label {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 850;
+}
+
 .contact-links a {
   display: inline-flex;
   align-items: center;
@@ -179,6 +186,7 @@
 .contact-list {
   display: grid;
   gap: 10px;
+  margin: 0;
 }
 
 .contact-list-seller {
@@ -200,14 +208,20 @@
   border-top: 0;
 }
 
-.contact-row span {
+.contact-row dt {
+  margin: 0;
   color: var(--green-900);
   font-size: 0.9rem;
   font-weight: 950;
 }
 
+.contact-row dd {
+  margin: 0;
+}
+
 .contact-row a,
-.contact-row strong {
+.contact-row strong,
+.contact-row dd {
   color: var(--green-900);
   font-size: 1rem;
   font-weight: 900;
@@ -315,6 +329,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+  }
+
+  .contact-social-label {
+    margin-top: 16px;
+    font-size: 0.9rem;
   }
 
   .contact-links a {
