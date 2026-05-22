@@ -211,7 +211,7 @@
 
   .hero-bacteria {
     top: -8px;
-    right: clamp(20px, 5vw, 32px);
+    right: clamp(4px, 1.6vw, 10px);
     width: clamp(156px, 42vw, 170px);
     display: flex;
     align-items: center;
