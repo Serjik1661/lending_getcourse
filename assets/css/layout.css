@@ -16,6 +16,7 @@ body {
   max-width: none;
   min-height: 100vh;
   overflow-x: hidden;
+  padding-top: 78px;
 }
 
 .container {
@@ -35,8 +36,10 @@ body {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(47, 109, 60, 0.12);
   background: rgba(255, 250, 240, 0.92);
