@@ -61,10 +61,7 @@
   }
 
   .hero {
-    background-image: url("../images/hero/hero-propolis-background.png");
-    background-position: 64% center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../images/hero/hero-propolis-background.png") 64% center / cover no-repeat !important;
   }
 
   .hero h1 {
@@ -115,15 +112,25 @@
     padding-bottom: 42px;
   }
 
+  .video-section .container {
+    display: grid;
+    place-items: center;
+  }
+
   .course-video-card {
     border-radius: 24px;
     padding: 6px;
     width: min(100%, 980px);
+    margin-inline: auto;
   }
 
   .course-video {
+    display: block;
+    width: 100%;
     border-radius: 18px;
     min-height: clamp(220px, 56vw, 460px);
+    margin-inline: auto;
+    object-position: center center;
   }
 
   .cta-band {
@@ -184,24 +191,52 @@
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+    width: min(100%, 980px);
+    padding: 24px 18px 28px;
+    border-radius: 40px;
+    gap: 22px;
   }
 
   .market-band p {
     text-align: center;
+    font-size: clamp(1.7rem, 7vw, 2.35rem);
+    line-height: 1.12;
+    max-width: 11ch;
+    margin-inline: auto;
   }
 
   .market-links {
     width: auto;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 22px;
   }
 
   .market-link {
     justify-content: center;
+    width: clamp(104px, 30vw, 138px);
+    height: clamp(104px, 30vw, 138px);
+    border-radius: 34px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+    box-shadow:
+      0 14px 30px rgba(20, 72, 32, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.86);
   }
 
   .market-logo {
     margin-inline: auto;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+
+  .market-logo-ozon,
+  .market-logo-wb {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 
@@ -237,10 +272,7 @@
 
   .hero {
     padding: 52px 0 48px;
-    background-image: url("../images/hero/hero-propolis-background.png");
-    background-position: 62% top;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../images/hero/hero-propolis-background.png") 62% top / cover no-repeat !important;
   }
 
   .hero-tags {
@@ -248,15 +280,19 @@
   }
 
   .cta-band {
-    background-position: 72% center;
+    min-height: clamp(560px, 168vw, 760px);
+    border-radius: var(--radius-xl);
+    background-position: 74% center;
     background-size: cover;
+    align-items: flex-start;
+    padding: 32px 20px 28px;
   }
 
   .hero-bacteria {
-    top: -48px;
-    right: -14px;
+    top: -54px;
+    right: -30px;
     width: fit-content;
-    max-width: 106px;
+    max-width: 102px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -274,9 +310,9 @@
   }
 
   .hero-bacteria p {
-    font-size: 0.48rem;
+    font-size: 0.46rem;
     line-height: 1.08;
-    max-width: 76px;
+    max-width: 72px;
   }
 
   .hero-copy {
@@ -303,17 +339,30 @@
     padding: 48px 0;
   }
 
-  .cta-band {
-    border-radius: var(--radius-xl);
-    background-position: 74% center;
-    background-size: cover;
-    padding: 32px 20px 28px;
+  .cta-band > div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    max-width: min(100%, 420px);
   }
 
   .cta-band h2 {
-    max-width: 13ch;
+    max-width: 12ch;
     font-size: clamp(2.3rem, 8.1vw, 2.7rem);
     line-height: 1.06;
+  }
+
+  .cta-band p {
+    max-width: 16ch;
+    margin: 14px 0 0;
+    line-height: 1.28;
+  }
+
+  .cta-band .button {
+    margin-top: auto;
+    width: min(100%, 320px);
+    justify-content: center;
   }
 
   .section-heading h2 {
