@@ -1,56 +1,83 @@
-# Propolis Course Site
+# Propolis Course Landing
 
-Статический production-ready лендинг образовательного курса «Пошаговая система натуральной поддержки организма с водным экстрактом прополиса».
+Статический лендинг образовательного курса о натуральной поддержке организма с водным экстрактом прополиса.
 
-## Как открыть локально
+Продакшн-домен: `https://propolis-doctor.ru`
 
-1. Откройте `index.html` двойным кликом в браузере.
-2. Или запустите `start_site.bat`, если нужен локальный сервер.
+## Что внутри
 
-Сайт не требует сборки, npm-пакетов или внешних CDN.
+- Главная страница курса.
+- Юридические страницы: политика, соглашение, оферта, возврат, медицинский дисклеймер, контакты.
+- Страница благодарности после demo-отправки формы.
+- Локальные стили, скрипты, шрифты и медиа без CDN и сборки.
+- Nginx-настройки для clean URL и security headers.
 
-## Структура
+## Технологии
 
-- `index.html` — главная страница лендинга.
-- `privacy.html`, `terms.html`, `offer.html`, `refund.html`, `medical-disclaimer.html`, `contacts.html` — юридические страницы.
-- `thank-you.html` — страница после успешной demo-отправки формы.
-- `assets/css/` — CSS, разделенный по назначению.
-- `assets/js/` — JS без внешних зависимостей.
-- `assets/images/` — изображения по разделам сайта.
-- `assets/icons/` — favicon, социальные и интерфейсные иконки.
-- `docs/` — документация для публикации.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Nginx (деплой на VPS)
 
-## Где менять тексты
+## Локальный запуск
 
-Основной продающий текст находится в `index.html`. Юридические формулировки находятся в отдельных HTML-страницах и в `docs/CONTENT-RULES.md`.
+1. Откройте `index.html` в браузере.
+2. Или запустите `start_site.bat` для локального HTTP-сервера (`http://127.0.0.1:8787`).
 
-## Где менять картинки
+Сборка (`npm`, bundler) не требуется.
 
-Рабочие изображения лежат в `assets/images/`:
+## URL-структура
 
-- `hero/` — первый экран;
-- `course/` — книга и материалы курса;
-- `doctor/` — фото автора;
-- `reviews/` — фото для отзывов;
-- `cta/` — CTA-блок;
-- `og/` — картинка для Open Graph.
+Сайт использует clean URL:
 
-## Где менять реквизиты
+- `/`
+- `/contacts`
+- `/privacy`
+- `/terms`
+- `/offer`
+- `/refund`
+- `/medical-disclaimer`
+- `/thank-you`
 
-Перед публикацией замените плейсхолдеры в футере и юридических страницах:
+Старые URL вида `*.html` должны редиректиться на clean URL через Nginx.
 
-- ИП/ООО;
-- ИНН;
-- ОГРНИП/ОГРН;
-- email;
-- телефон;
-- адрес/регион;
-- условия доступа и возврата.
+## Структура проекта
 
-## Перед публикацией
+- `index.html` — главная.
+- `contacts.html`, `privacy.html`, `terms.html`, `offer.html`, `refund.html`, `medical-disclaimer.html`, `thank-you.html` — страницы сайта.
+- `assets/css/` — стили.
+- `assets/js/` — скрипты.
+- `assets/icons/`, `assets/images/`, `assets/fonts/`, `assets/videos/` — статические ассеты.
+- `sitemap.xml`, `robots.txt`, `site.webmanifest` — SEO/PWA-файлы.
+- `docs/` — документация по публикации и безопасности.
 
-1. Заполнить реальные реквизиты и контакты.
-2. Проверить юридические страницы с юристом.
-3. Подключить рабочую форму, CRM/GetCourse и оплату.
-4. Обновить `sitemap.xml` и `robots.txt` под настоящий домен.
-5. Проверить сайт на desktop, tablet и mobile.
+## Деплой на VPS
+
+Рекомендуемый порядок:
+
+1. Загрузить HTML-файлы, `sitemap.xml`, `robots.txt`, `site.webmanifest`, папку `assets/`.
+2. Применить Nginx-конфиг из `docs/NGINX-SECURITY-CONFIG.md`.
+3. Проверить конфиг и перезагрузить Nginx: `sudo nginx -t` и `sudo systemctl reload nginx`.
+4. Включить автозапуск Nginx после перезагрузки VPS: `sudo systemctl enable nginx` и `sudo systemctl is-enabled nginx`.
+
+## Безопасность
+
+Проект настроен под:
+
+- `Strict-Transport-Security`
+- `Content-Security-Policy`
+- `X-Frame-Options`
+- `X-Content-Type-Options`
+- `Referrer-Policy`
+- `Permissions-Policy`
+- Блокировку чувствительных путей и архивов (`.git`, `*.zip`, `*.rar` и т.д.)
+
+См.:
+
+- `docs/NGINX-SECURITY-CONFIG.md`
+- `docs/VPS-HARDENING.md`
+- `SECURITY.md`
+
+## Примечание по форме
+
+`assets/js/form.js` работает в demo-режиме и не сохраняет персональные данные в `localStorage`.
