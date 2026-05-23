@@ -8,3 +8,11 @@ dist/
 build/
 
 *.log
+
+# Local archives and temporary assets that should never be published
+*.zip
+*.rar
+artifacts/
+__MACOSX/
+Новый фото/
+все варианты лого/

@@ -1,8 +1,6 @@
 (function () {
   "use strict";
 
-  const STORAGE_KEY = "propolisCourseDemoLeads";
-
   function setFieldError(field, message) {
     const wrapper = field.closest(".field");
     const error = document.getElementById(`${field.id}-error`);
@@ -15,17 +13,8 @@
     if (error) error.textContent = message || "";
   }
 
-  function saveDemoLead(data) {
-    try {
-      const current = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-      current.push({
-        ...data,
-        createdAt: new Date().toISOString()
-      });
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(current.slice(-20)));
-    } catch (error) {
-      return false;
-    }
+  function saveDemoLead() {
+    // Do not persist personal data in the browser in demo mode.
     return true;
   }
 
@@ -105,7 +94,7 @@
 
       const params = new URLSearchParams({ name });
       window.setTimeout(() => {
-        window.location.href = `thank-you.html?${params.toString()}`;
+        window.location.href = `/thank-you?${params.toString()}`;
       }, 550);
     });
   }

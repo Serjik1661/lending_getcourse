@@ -1,10 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; media-src 'self'; frame-src https://yandex.ru https://*.yandex.ru; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
   <title>Контакты</title>
   <meta name="description" content="Контакты и реквизиты для связи по вопросам образовательного курса.">
+  <link rel="canonical" href="https://propolis-doctor.ru/contacts">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/utils.js" defer></script>
@@ -16,7 +19,7 @@
   <div class="page-shell">
     <header class="site-header" data-header>
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Прополис Здоровье, на главную">
+        <a class="brand" href="/" aria-label="Прополис Здоровье, на главную">
           <img src="assets/icons/logo-doctor.png" alt="" width="44" height="44" aria-hidden="true">
           <span>
             <strong>Прополис · Здоровье</strong>
@@ -25,14 +28,14 @@
         </a>
 
         <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
-          <a href="index.html#inside">Что получите</a>
-          <a href="index.html#audience">Кому подойдет</a>
-          <a href="index.html#program">Программа</a>
-          <a href="index.html#doctor">Автор</a>
-          <a href="index.html#faq">Вопросы</a>
+          <a href="/#inside">Что получите</a>
+          <a href="/#audience">Кому подойдет</a>
+          <a href="/#program">Программа</a>
+          <a href="/#doctor">Автор</a>
+          <a href="/#faq">Вопросы</a>
         </nav>
 
-        <a class="button button-header" href="contacts.html">Связаться</a>
+        <a class="button button-header" href="/contacts">Связаться</a>
 
         <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
           <span class="sr-only">Открыть меню</span>
@@ -45,7 +48,7 @@
 
     <main id="main" class="legal-main">
       <div class="legal-container">
-        <a class="legal-back" href="index.html">Вернуться на главную</a>
+        <a class="legal-back" href="/">Вернуться на главную</a>
 
         <article class="legal-card contact-card">
           <div class="contact-heading">
@@ -132,10 +135,10 @@
           </a>
         </section>
         <nav class="footer-links" aria-label="Юридические страницы">
-          <a href="privacy.html">Политика конфиденциальности</a>
-          <a href="terms.html">Пользовательское соглашение</a>
-          <a href="medical-disclaimer.html">Медицинский дисклеймер</a>
-          <a href="contacts.html">Контакты</a>
+          <a href="/privacy">Политика конфиденциальности</a>
+          <a href="/terms">Пользовательское соглашение</a>
+          <a href="/medical-disclaimer">Медицинский дисклеймер</a>
+          <a href="/contacts">Контакты</a>
         </nav>
         <div class="footer-details">
           <dl>
