@@ -121,6 +121,48 @@
   object-fit: contain;
 }
 
+.video-section {
+  padding-top: clamp(28px, 4vw, 56px);
+  padding-bottom: clamp(38px, 5vw, 72px);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(228, 171, 65, 0.12), transparent 22rem),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.72) 0%, var(--white) 100%);
+}
+
+.course-video-card {
+  position: relative;
+  width: min(100%, 980px);
+  margin-inline: auto;
+  padding: clamp(8px, 1vw, 12px);
+  border: 1px solid rgba(47, 109, 60, 0.18);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(243, 248, 237, 0.88));
+  box-shadow: 0 28px 70px rgba(24, 55, 24, 0.12);
+}
+
+.course-video-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, rgba(228, 171, 65, 0.26), rgba(47, 109, 60, 0.12));
+}
+
+.course-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 24px;
+  background: #0d2d19;
+  object-fit: cover;
+  pointer-events: auto;
+  touch-action: auto;
+}
+
 .benefit-grid,
 .program-grid,
 .review-grid {
@@ -397,6 +439,96 @@
 
 .cta-band img {
   display: none;
+}
+
+.market-section {
+  padding-top: clamp(18px, 3vw, 34px);
+  padding-bottom: clamp(28px, 4vw, 52px);
+  background:
+    linear-gradient(180deg, var(--white) 0%, rgba(247, 248, 244, 0.78) 100%);
+}
+
+.market-band {
+  position: relative;
+  width: min(100%, 920px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(18px, 3vw, 34px);
+  padding: clamp(18px, 3vw, 30px) clamp(20px, 4vw, 42px);
+  overflow: hidden;
+  border: 1px solid rgba(47, 109, 60, 0.16);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(228, 171, 65, 0.2), transparent 18rem),
+    radial-gradient(circle at 92% 100%, rgba(47, 109, 60, 0.12), transparent 16rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(243, 248, 237, 0.92));
+  box-shadow: 0 22px 54px rgba(24, 55, 24, 0.09);
+}
+
+.market-band p {
+  margin: 0;
+  color: var(--green-900);
+  font-family: var(--font-display);
+  font-size: clamp(1.24rem, 1.8vw, 1.62rem);
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.market-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.market-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  padding: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  box-shadow:
+    0 14px 28px rgba(20, 72, 32, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+  transition: transform 180ms var(--ease), box-shadow 180ms var(--ease), border-color 180ms var(--ease);
+}
+
+.market-link:hover,
+.market-link:focus-visible {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(228, 171, 65, 0.5);
+  box-shadow:
+    0 20px 38px rgba(20, 72, 32, 0.18),
+    0 0 0 6px rgba(228, 171, 65, 0.1);
+}
+
+.market-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.market-logo-ozon {
+  width: 68px;
+  height: 68px;
+}
+
+.market-logo-wb {
+  width: 64px;
+  height: 64px;
 }
 
 .order-inner {
