@@ -254,13 +254,13 @@
 
   .hero-bacteria {
     top: -6px;
-    right: 8px;
+    right: 0;
     width: fit-content;
-    max-width: 116px;
+    max-width: 108px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2px;
+    gap: 0;
     transform: none;
     text-align: right;
     z-index: 1;
@@ -276,7 +276,7 @@
   .hero-bacteria p {
     font-size: 0.48rem;
     line-height: 1.08;
-    max-width: 78px;
+    max-width: 74px;
   }
 
   .hero-copy {
