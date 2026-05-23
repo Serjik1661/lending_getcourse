@@ -61,11 +61,10 @@
   }
 
   .hero {
-    background:
-      linear-gradient(90deg, rgba(255, 250, 240, 0.98) 0%, rgba(255, 250, 240, 0.86) 44%, rgba(255, 250, 240, 0.3) 74%),
-      url("../images/hero/hero-propolis-background.png");
+    background-image: url("../images/hero/hero-propolis-background.png");
     background-position: 64% center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero h1 {
@@ -119,10 +118,12 @@
   .course-video-card {
     border-radius: 24px;
     padding: 6px;
+    width: min(100%, 980px);
   }
 
   .course-video {
     border-radius: 18px;
+    min-height: clamp(220px, 56vw, 460px);
   }
 
   .cta-band {
@@ -236,11 +237,10 @@
 
   .hero {
     padding: 52px 0 48px;
-    background:
-      linear-gradient(90deg, rgba(255, 250, 240, 0.34) 0%, rgba(255, 250, 240, 0.2) 40%, rgba(255, 250, 240, 0.08) 66%, rgba(255, 250, 240, 0.02) 100%),
-      url("../images/hero/hero-propolis-background.png");
+    background-image: url("../images/hero/hero-propolis-background.png");
     background-position: 62% top;
-    background-size: auto 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .hero-tags {
@@ -254,7 +254,7 @@
 
   .hero-bacteria {
     top: -48px;
-    right: 0;
+    right: -14px;
     width: fit-content;
     max-width: 106px;
     display: flex;
@@ -283,6 +283,10 @@
     position: relative;
     z-index: 2;
     padding-top: 38px;
+  }
+
+  .course-video {
+    min-height: clamp(200px, 60vw, 320px);
   }
 
   .hero-price {

@@ -129,9 +129,14 @@
     linear-gradient(180deg, rgba(255, 250, 240, 0.72) 0%, var(--white) 100%);
 }
 
+.video-section .container {
+  display: flex;
+  justify-content: center;
+}
+
 .course-video-card {
   position: relative;
-  width: min(100%, 980px);
+  width: min(100%, 1120px);
   margin-inline: auto;
   padding: clamp(8px, 1vw, 12px);
   border: 1px solid rgba(47, 109, 60, 0.18);
@@ -155,6 +160,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
+  min-height: clamp(320px, 52vw, 640px);
   border: 0;
   border-radius: 24px;
   background: #0d2d19;
