@@ -199,9 +199,9 @@
 
   .market-band p {
     text-align: center;
-    font-size: clamp(1.7rem, 7vw, 2.35rem);
+    font-size: clamp(1.85rem, 6.1vw, 2.35rem);
     line-height: 1.12;
-    max-width: 11ch;
+    max-width: 18ch;
     margin-inline: auto;
   }
 
@@ -286,12 +286,12 @@
   }
 
   .cta-band {
-    min-height: clamp(560px, 168vw, 760px);
+    min-height: clamp(560px, 162vw, 740px);
     border-radius: var(--radius-xl);
-    background-position: 66% center;
-    background-size: cover;
+    background-position: 62% center;
+    background-size: 96% auto;
     align-items: flex-start;
-    padding: 32px 20px 28px;
+    padding: 30px 18px 24px;
   }
 
   .hero-bacteria {
@@ -350,7 +350,7 @@
     flex-direction: column;
     min-height: 100%;
     width: 100%;
-    max-width: min(100%, 420px);
+    max-width: min(100%, 390px);
   }
 
   .cta-band h2 {
@@ -360,15 +360,42 @@
   }
 
   .cta-band p {
-    max-width: 16ch;
+    max-width: 15ch;
     margin: 14px 0 0;
     line-height: 1.28;
   }
 
   .cta-band .button {
     margin-top: auto;
-    width: min(100%, 320px);
+    width: min(100%, 312px);
     justify-content: center;
+  }
+
+  .market-section {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+
+  .market-band {
+    padding: 24px 16px 26px;
+    border-radius: 34px;
+    gap: 18px;
+  }
+
+  .market-band p {
+    font-size: clamp(1.72rem, 6vw, 2.12rem);
+    line-height: 1.14;
+    max-width: 14.5ch;
+  }
+
+  .market-links {
+    gap: 18px;
+  }
+
+  .market-link {
+    width: clamp(100px, 28vw, 126px);
+    height: clamp(100px, 28vw, 126px);
+    border-radius: 30px;
   }
 
   .section-heading h2 {
