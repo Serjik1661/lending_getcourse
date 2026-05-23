@@ -237,9 +237,9 @@
   .hero {
     padding: 52px 0 48px;
     background:
-      linear-gradient(90deg, rgba(255, 250, 240, 0.98) 0%, rgba(255, 250, 240, 0.9) 43%, rgba(255, 250, 240, 0.42) 68%, rgba(255, 250, 240, 0.12) 100%),
+      linear-gradient(90deg, rgba(255, 250, 240, 0.78) 0%, rgba(255, 250, 240, 0.62) 40%, rgba(255, 250, 240, 0.24) 66%, rgba(255, 250, 240, 0.08) 100%),
       url("../images/hero/hero-propolis-background.png");
-    background-position: 66% top;
+    background-position: 70% top;
     background-size: auto 100%;
   }
 
@@ -254,12 +254,13 @@
 
   .hero-bacteria {
     top: -6px;
-    right: 2px;
-    width: 120px;
+    right: 8px;
+    width: fit-content;
+    max-width: 116px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 4px;
+    justify-content: flex-start;
+    gap: 2px;
     transform: none;
     text-align: right;
     z-index: 1;
@@ -273,9 +274,9 @@
   }
 
   .hero-bacteria p {
-    font-size: 0.46rem;
+    font-size: 0.48rem;
     line-height: 1.08;
-    max-width: 82px;
+    max-width: 78px;
   }
 
   .hero-copy {
