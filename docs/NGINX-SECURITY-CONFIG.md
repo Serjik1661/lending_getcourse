@@ -30,7 +30,7 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style
 server_tokens off;
 
 # Block sensitive paths/files from accidental publishing
-location ~* /\. { deny all; }
+location ~ /\. { deny all; }
 location ~* /(artifacts|docs|__MACOSX)/ { deny all; }
 location ~* \.(zip|rar|7z|tar|gz|bak|old)$ { deny all; }
 location = /start_site.bat { deny all; }
