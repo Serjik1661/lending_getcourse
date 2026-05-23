@@ -286,12 +286,12 @@
   }
 
   .cta-band {
-    min-height: clamp(560px, 162vw, 740px);
+    min-height: 0;
     border-radius: var(--radius-xl);
-    background-position: 62% center;
-    background-size: 96% auto;
+    background-position: 70% center;
+    background-size: cover;
     align-items: flex-start;
-    padding: 30px 18px 24px;
+    padding: 26px 16px 24px;
   }
 
   .hero-bacteria {
@@ -348,7 +348,7 @@
   .cta-band > div {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 0;
     width: 100%;
     max-width: min(100%, 390px);
   }
@@ -366,7 +366,7 @@
   }
 
   .cta-band .button {
-    margin-top: auto;
+    margin-top: 18px;
     width: min(100%, 312px);
     justify-content: center;
   }
