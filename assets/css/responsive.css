@@ -214,9 +214,13 @@
   }
 
   .market-link {
+    display: inline-flex !important;
+    flex: 0 0 auto;
     justify-content: center;
     width: clamp(104px, 30vw, 138px);
     height: clamp(104px, 30vw, 138px);
+    max-width: 138px;
+    max-height: 138px;
     border-radius: 34px;
     padding: 12px;
     background: rgba(255, 255, 255, 0.92);
@@ -230,6 +234,8 @@
     margin-inline: auto;
     width: 100% !important;
     height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     object-fit: contain;
   }
 
