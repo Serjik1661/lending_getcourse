@@ -295,14 +295,14 @@
   }
 
   .hero-bacteria {
-    top: -54px;
-    right: -30px;
+    top: -48px;
+    right: 6px;
     width: fit-content;
     max-width: 102px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1px;
+    gap: 2px;
     transform: none;
     text-align: right;
     z-index: 1;
