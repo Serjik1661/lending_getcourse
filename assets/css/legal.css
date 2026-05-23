@@ -130,9 +130,23 @@
 .contact-map-wrap {
   margin-top: 14px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  padding: 2px;
+  border: 2px solid rgba(112, 131, 113, 0.45);
   border-radius: 18px;
   box-shadow: var(--shadow-card);
+  background: rgba(233, 238, 229, 0.9);
+}
+
+.contact-map-embed {
+  border: 1px solid rgba(112, 131, 113, 0.42);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact-map-frame {
+  display: block;
+  width: 100%;
+  border: 0;
 }
 
 .contact-map-wrap script {
