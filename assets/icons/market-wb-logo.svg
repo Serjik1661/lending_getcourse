@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="72" viewBox="0 0 260 72" role="img" aria-labelledby="wbTitle wbDesc">
+  <title id="wbTitle">Wildberries logo button</title>
+  <desc id="wbDesc">Purple gradient button with wb wordmark</desc>
+  <defs>
+    <linearGradient id="wbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a034ff"/>
+      <stop offset="100%" stop-color="#6f22bb"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="258" height="70" rx="16" fill="url(#wbBg)"/>
+  <text x="130" y="48" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">wb</text>
+</svg>
+

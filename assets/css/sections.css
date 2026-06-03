@@ -129,6 +129,15 @@
     linear-gradient(180deg, rgba(255, 250, 240, 0.72) 0%, var(--white) 100%);
 }
 
+.cta-note {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
 .video-section .container {
   display: flex;
   justify-content: center;
@@ -160,11 +169,11 @@
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  min-height: clamp(320px, 52vw, 640px);
+  min-height: clamp(340px, 52vw, 660px);
   border: 0;
   border-radius: 24px;
   background: #0d2d19;
-  object-fit: cover;
+  object-fit: contain;
   pointer-events: auto;
   touch-action: auto;
 }
@@ -405,7 +414,7 @@
   padding: clamp(34px, 5vw, 58px);
   border-radius: var(--radius-xl);
   background-color: #144820;
-  background-image: url("../images/cta/cta-propolis-bottle.png");
+  background-image: url("../images/cta/cta-propolis-bottle.webp");
   background-position: 108% center;
   background-size: 66% auto;
   background-repeat: no-repeat;
@@ -441,6 +450,13 @@
   max-width: 540px;
   margin: 16px 0 24px;
   color: rgba(255, 255, 255, 0.82);
+}
+
+.cta-band .cta-note {
+  margin-top: 14px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.9rem;
 }
 
 .cta-band img {

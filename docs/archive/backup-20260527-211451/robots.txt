@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://propolis-doctor.ru/sitemap.xml

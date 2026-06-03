@@ -1,0 +1,433 @@
+﻿@media (max-width: 1100px) {
+  .site-nav {
+    gap: 2px;
+  }
+
+  .site-nav a {
+    padding-inline: 10px;
+    font-size: 0.86rem;
+  }
+
+  .benefit-grid,
+  .program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 78px;
+    left: 20px;
+    right: 20px;
+    display: none;
+    justify-self: stretch;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    border-radius: 22px;
+    background: rgba(255, 250, 240, 0.98);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 14px 16px;
+  }
+
+  .button-header {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    justify-self: end;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    min-height: 620px;
+  }
+
+  .hero {
+    background: url("../images/hero/hero-propolis-background.png") 64% center / cover no-repeat !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 10vw, 56px);
+  }
+
+  .hero-line {
+    white-space: normal;
+  }
+
+  .hero-bacteria {
+    position: absolute;
+    top: clamp(230px, 43vw, 330px);
+    right: clamp(12px, 3vw, 24px);
+    z-index: 1;
+    width: clamp(112px, 18vw, 140px);
+    margin: 0;
+    display: block;
+    transform: none;
+    text-align: center;
+  }
+
+  .hero-bacteria img {
+    width: clamp(56px, 8vw, 66px);
+    height: clamp(56px, 8vw, 66px);
+    margin: 0 auto 8px;
+  }
+
+  .hero-bacteria p {
+    font-size: clamp(0.66rem, 1.45vw, 0.78rem);
+    line-height: 1.16;
+  }
+
+  .hero-price {
+    margin-top: 8px;
+  }
+
+  .hero-tags,
+  .audience-inner,
+  .doctor-inner,
+  .order-inner,
+  .cta-band {
+    grid-template-columns: 1fr;
+  }
+
+  .video-section {
+    padding-top: 24px;
+    padding-bottom: 42px;
+  }
+
+  .video-section .container {
+    display: grid;
+    place-items: center;
+  }
+
+  .course-video-card {
+    border-radius: 24px;
+    padding: 6px;
+    width: min(100%, 980px);
+    margin-inline: auto;
+  }
+
+  .course-video {
+    display: block;
+    width: 100%;
+    border-radius: 18px;
+    min-height: clamp(220px, 56vw, 460px);
+    margin-inline: auto;
+    object-position: center center;
+  }
+
+  .cta-band {
+    background-position: 68% center;
+    background-size: cover;
+  }
+
+  .cta-band::before {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 72, 32, 0.98) 0%,
+      rgba(20, 72, 32, 0.98) 48%,
+      rgba(25, 86, 34, 0.62) 74%,
+      rgba(25, 86, 34, 0.16) 100%
+    );
+  }
+
+  .cta-band h2 {
+    max-width: 13.5ch;
+    font-size: clamp(34px, 9vw, 44px);
+    line-height: 1.08;
+  }
+
+  .cta-band p {
+    max-width: 21ch;
+  }
+
+  .order-copy {
+    position: static;
+  }
+
+  .cta-band img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .audience-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .benefit-grid,
+  .program-grid,
+  .form-grid,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .price-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .market-band {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    width: min(100%, 980px);
+    padding: 24px 18px 28px;
+    border-radius: 40px;
+    gap: 22px;
+  }
+
+  .market-band p {
+    text-align: center;
+    font-size: clamp(1.85rem, 6.1vw, 2.35rem);
+    line-height: 1.12;
+    max-width: 18ch;
+    margin-inline: auto;
+  }
+
+  .market-links {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .market-link {
+    display: inline-flex !important;
+    flex: 0 0 auto;
+    justify-content: center;
+    width: clamp(104px, 30vw, 138px);
+    height: clamp(104px, 30vw, 138px);
+    max-width: 138px;
+    max-height: 138px;
+    border-radius: 34px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+    box-shadow:
+      0 14px 30px rgba(20, 72, 32, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  }
+
+  .market-logo {
+    margin-inline: auto;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain;
+  }
+
+  .market-logo-ozon,
+  .market-logo-wb {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .container,
+  .hero-inner,
+  .legal-container {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
+  .site-header {
+    background: rgba(255, 250, 240, 0.96);
+  }
+
+  .page-shell {
+    padding-top: 70px;
+  }
+
+  .header-inner {
+    min-height: 70px;
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .site-nav {
+    top: 70px;
+    left: 12px;
+    right: 12px;
+  }
+
+  .hero {
+    padding: 52px 0 48px;
+    background: url("../images/hero/hero-propolis-background.png") 62% top / cover no-repeat !important;
+  }
+
+  .hero-tags {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-band {
+    min-height: 0;
+    border-radius: var(--radius-xl);
+    background-position: 70% center;
+    background-size: cover;
+    align-items: flex-start;
+    padding: 26px 16px 24px;
+  }
+
+  .hero-bacteria {
+    top: -48px;
+    right: 6px;
+    width: fit-content;
+    max-width: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    transform: none;
+    text-align: right;
+    z-index: 1;
+  }
+
+  .hero-bacteria img {
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+
+  .hero-bacteria p {
+    font-size: 0.46rem;
+    line-height: 1.08;
+    max-width: 72px;
+  }
+
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+    padding-top: 38px;
+  }
+
+  .course-video {
+    min-height: clamp(200px, 60vw, 320px);
+  }
+
+  .hero-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+
+  .hero-inner {
+    min-height: 600px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .cta-band > div {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    width: 100%;
+    max-width: min(100%, 390px);
+  }
+
+  .cta-band h2 {
+    max-width: 12ch;
+    font-size: clamp(2.3rem, 8.1vw, 2.7rem);
+    line-height: 1.06;
+  }
+
+  .cta-band p {
+    max-width: 15ch;
+    margin: 14px 0 0;
+    line-height: 1.28;
+  }
+
+  .cta-band .button {
+    margin-top: 18px;
+    width: min(100%, 312px);
+    justify-content: center;
+  }
+
+  .market-section {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+
+  .market-band {
+    padding: 24px 16px 26px;
+    border-radius: 34px;
+    gap: 18px;
+  }
+
+  .market-band p {
+    font-size: clamp(1.72rem, 6vw, 2.12rem);
+    line-height: 1.14;
+    max-width: 14.5ch;
+  }
+
+  .market-links {
+    gap: 18px;
+  }
+
+  .market-link {
+    width: clamp(100px, 28vw, 126px);
+    height: clamp(100px, 28vw, 126px);
+    border-radius: 30px;
+  }
+
+  .section-heading h2 {
+    display: block;
+    width: 100%;
+    max-inline-size: 100%;
+    max-width: 14ch;
+    margin-inline: auto;
+    font-size: 28px;
+    line-height: 1.08;
+    letter-spacing: 0;
+    text-wrap: balance;
+    white-space: normal;
+    word-break: normal;
+    hyphens: none;
+    overflow-wrap: normal;
+  }
+
+  .benefit-card,
+  .audience-item,
+  .review-card {
+    padding: 22px;
+  }
+
+  .order-card,
+  .legal-card {
+    border-radius: 22px;
+  }
+
+  .footer-details div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+

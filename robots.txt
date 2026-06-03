@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you
+Disallow: /thank-you.html
+Disallow: /404.html
+Disallow: /offline.html
+Disallow: /offer
+Disallow: /offer.html
+Disallow: /refund
+Disallow: /refund.html
+Disallow: /docs/archive/
 
 Sitemap: https://propolis-doctor.ru/sitemap.xml

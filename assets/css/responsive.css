@@ -61,7 +61,7 @@
   }
 
   .hero {
-    background: url("../images/hero/hero-propolis-background.png") 64% center / cover no-repeat !important;
+    background: url("../images/hero/hero-propolis-background.webp") 64% center / cover no-repeat !important;
   }
 
   .hero h1 {
@@ -132,6 +132,7 @@
     margin-inline: auto;
     object-position: center center;
   }
+
 
   .cta-band {
     background-position: 68% center;
@@ -278,7 +279,7 @@
 
   .hero {
     padding: 52px 0 48px;
-    background: url("../images/hero/hero-propolis-background.png") 62% top / cover no-repeat !important;
+    background: url("../images/hero/hero-propolis-background.webp") 62% top / cover no-repeat !important;
   }
 
   .hero-tags {
@@ -330,6 +331,7 @@
   .course-video {
     min-height: clamp(200px, 60vw, 320px);
   }
+
 
   .hero-price {
     display: flex;

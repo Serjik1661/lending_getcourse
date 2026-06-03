@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; media-src 'self'; frame-src https://yandex.ru https://*.yandex.ru; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
-  <title>Контакты</title>
-  <meta name="description" content="Контакты и реквизиты для связи по вопросам образовательного курса.">
+  <title>Контакты | Прополис · Здоровье</title>
+  <meta name="description" content="Контакты, реквизиты и организационная связь по информационно-консультационному курсу о водном экстракте прополиса.">
   <link rel="canonical" href="https://propolis-doctor.ru/contacts">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/utils.js" defer></script>
   <script src="assets/js/menu.js" defer></script>
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/cookie-consent.js" defer></script>
+  <script src="assets/js/register-sw.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -20,7 +22,7 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="Прополис Здоровье, на главную">
-          <img src="assets/icons/logo-doctor.png" alt="" width="44" height="44" aria-hidden="true">
+          <img src="assets/icons/logo-doctor.webp" alt="" width="44" height="44" aria-hidden="true">
           <span>
             <strong>Прополис · Здоровье</strong>
             <small>контакты</small>
@@ -53,7 +55,7 @@
         <article class="legal-card contact-card">
           <div class="contact-heading">
             <h1>Контакты</h1>
-            <p>Группы здоровья, вопросы доктору и быстрая связь.</p>
+            <p>Организационные вопросы и общие разъяснения по материалам курса. Ответы не являются медицинской консультацией, диагностикой или назначением лечения.</p>
           </div>
 
           <div class="contact-links" aria-label="Группы для общения">
@@ -78,25 +80,33 @@
 
             <h2>Реквизиты и адрес</h2>
             <ul class="contact-plain-list">
-              <li><strong>Адрес:</strong> <a href="https://yandex.ru/maps/-/CPwWv450" target="_blank" rel="noopener noreferrer">г. Таганрог, ул. Сергея Шило, 265В</a></li>
+              <li><strong>Адрес офиса/корреспонденции:</strong> <a href="https://yandex.ru/maps/-/CPwWv450" target="_blank" rel="noopener noreferrer">г. Таганрог, ул. Сергея Шило, 265В</a> <span class="legal-note-inline">(TODO: подтвердить назначение адреса у заказчика)</span></li>
               <li><strong>Город:</strong> Таганрог</li>
             </ul>
 
             <h2>Связь</h2>
             <ul class="contact-plain-list">
               <li><strong>Email:</strong> <a href="mailto:skv-doctor@yandex.ru">skv-doctor@yandex.ru</a></li>
-              <li><strong>Номер:</strong> <a href="tel:+79397891863">+7 939 789-18-63</a> — Артём Ньюман</li>
-              <li><strong>Номер:</strong> <a href="tel:+79882542081">+7 988 254-20-81</a> — Доктор Каменский</li>
+              <li><strong>Организационные вопросы:</strong> <a href="tel:+79397891863">+7 939 789-18-63</a> — Артём Ньюман</li>
+              <li><strong>Вопросы по материалам курса:</strong> <a href="tel:+79882542081">+7 988 254-20-81</a> — Каменский Сергей Владимирович <span class="legal-note-inline">(не медицинская консультация)</span></li>
             </ul>
           </section>
 
           <h2>Офис на карте</h2>
           <div class="contact-map-wrap">
-            <div class="contact-map-embed" style="position:relative;overflow:hidden;">
-              <a href="https://yandex.ru/maps/org/doktor_kamenskiy/214634771030/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Доктор Каменский</a>
-              <a href="https://yandex.ru/maps/971/taganrog/category/medical_information_services/184107381/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Медицинские информационные услуги в Таганроге</a>
-              <a href="https://yandex.ru/maps/971/taganrog/category/honey_and_beekeeping/184106474/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Мёд и продукты пчеловодства в Таганроге</a>
-              <iframe class="contact-map-frame" src="https://yandex.ru/map-widget/v1/-/CPw84U28" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;display:block;"></iframe>
+            <div
+              data-yandex-map
+              data-map-src="https://yandex.ru/map-widget/v1/-/CPw84U28"
+              data-map-open-url="https://yandex.ru/maps/-/CPwWv450"
+              data-map-title="Офис Доктора Каменского на Яндекс.Картах"
+            >
+              <div class="map-placeholder" aria-label="Карта Яндекс не загружена до согласия пользователя">
+                <p>Карта не загружена, потому что она использует внешний сервис Яндекс.Карт. Вы можете разрешить загрузку карты на сайте или открыть адрес напрямую в Яндекс.Картах.</p>
+                <div class="map-placeholder__actions">
+                  <button class="cookie-banner__button cookie-banner__button--primary" type="button" data-map-show aria-label="Показать карту на сайте">Показать карту</button>
+                  <button class="cookie-banner__button cookie-banner__button--secondary" type="button" data-map-open aria-label="Открыть адрес в Яндекс.Картах">Открыть в Яндекс.Картах</button>
+                </div>
+              </div>
             </div>
           </div>
         </article>

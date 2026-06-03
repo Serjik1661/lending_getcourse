@@ -1,0 +1,16 @@
+{
+  "name": "Прополис · Здоровье",
+  "short_name": "Прополис",
+  "description": "Образовательный курс о натуральной поддержке организма с водным экстрактом прополиса.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f7f8f4",
+  "theme_color": "#2f6d3c",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="72" viewBox="0 0 260 72" role="img" aria-labelledby="ozonTitle ozonDesc">
+  <title id="ozonTitle">OZON logo button</title>
+  <desc id="ozonDesc">Blue button with Ozon wordmark</desc>
+  <defs>
+    <linearGradient id="ozonBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1065ff"/>
+      <stop offset="100%" stop-color="#0050e6"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="258" height="70" rx="16" fill="url(#ozonBg)"/>
+  <text x="130" y="47" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="2">OZON</text>
+</svg>
+
