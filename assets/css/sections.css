@@ -143,9 +143,17 @@
   justify-content: center;
 }
 
+.course-video-shell {
+  width: min(100%, 1120px);
+}
+
+.video-section-heading {
+  margin-bottom: 20px;
+}
+
 .course-video-card {
   position: relative;
-  width: min(100%, 1120px);
+  width: 100%;
   margin-inline: auto;
   padding: clamp(8px, 1vw, 12px);
   border: 1px solid rgba(47, 109, 60, 0.18);
@@ -176,6 +184,19 @@
   object-fit: contain;
   pointer-events: auto;
   touch-action: auto;
+}
+
+.video-disclaimer {
+  margin: 16px auto 0;
+  max-width: 980px;
+  padding: 14px 16px;
+  border: 1px solid rgba(47, 109, 60, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 251, 245, 0.94);
+  color: #4a5347;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  box-shadow: 0 10px 26px rgba(24, 55, 24, 0.06);
 }
 
 .benefit-grid,

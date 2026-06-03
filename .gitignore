@@ -10,6 +10,8 @@ build/
 *.log
 
 # Local archives and temporary assets that should never be published
+.codex-tools/
+*.mov
 *.zip
 *.rar
 artifacts/

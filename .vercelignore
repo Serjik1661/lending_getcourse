@@ -1,0 +1,15 @@
+.codex-tools/
+artifacts/
+docs/
+__MACOSX/
+Новый фото/
+все варианты лого/
+serve_local.py
+start_site.bat
+README.md
+SECURITY.md
+/*.mov
+/*.jpg
+/*.jpeg
+/*.png
+/*.svg
