@@ -5,7 +5,7 @@
   const ACCEPTED = "accepted";
   const NECESSARY = "necessary";
   const MAP_EVENT = "cookieConsent:accepted";
-  const PRIVACY_URL = "/privacy";
+  const PRIVACY_URL = "privacy.html";
 
   function getConsent() {
     try {

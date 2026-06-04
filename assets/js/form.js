@@ -94,7 +94,7 @@
 
       const params = new URLSearchParams({ name });
       window.setTimeout(() => {
-        window.location.href = `/thank-you?${params.toString()}`;
+        window.location.href = `./thank-you.html?${params.toString()}`;
       }, 550);
     });
   }
