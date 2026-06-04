@@ -123,22 +123,6 @@
   object-fit: contain;
 }
 
-.hero-tags > span > .hero-tag-label {
-  display: block;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  line-height: 1.22;
-  text-wrap: balance;
-  word-break: normal;
-  overflow-wrap: normal;
-  white-space: normal;
-}
-
 .hero-copy .button-primary {
   min-height: 54px;
   padding-inline: 28px;
