@@ -1,9 +1,9 @@
-﻿(function () {
+(function () {
   "use strict";
 
   if (!("serviceWorker" in navigator)) return;
 
-  const SW_VERSION = "20260604-4";
+  const SW_VERSION = "20260604-5";
 
   window.addEventListener("load", () => {
     navigator.serviceWorker.register(`./sw.js?v=${SW_VERSION}`, {
