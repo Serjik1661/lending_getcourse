@@ -94,21 +94,21 @@
 .hero-tags {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  max-width: 680px;
+  gap: clamp(14px, 1.5vw, 18px);
+  max-width: 700px;
   margin: 28px 0 22px;
 }
 
 .hero-tags > span {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
-  min-height: 74px;
-  padding: 14px 16px 14px 14px;
+  min-height: 78px;
+  padding: 16px 18px 16px 14px;
   border: 1px solid rgba(47, 109, 60, 0.1);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.86);
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.9);
   color: var(--green-900);
   font-size: 1rem;
   font-weight: 850;
@@ -117,13 +117,13 @@
 }
 
 .hero-tags > span:first-child {
-  transform: translateX(18px);
+  transform: none;
 }
 
 .hero-tags > span > img {
   flex: 0 0 auto;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
