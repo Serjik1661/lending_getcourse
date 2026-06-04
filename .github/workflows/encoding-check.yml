@@ -1,0 +1,17 @@
+name: encoding-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  utf8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify text encoding
+        run: python scripts/check_encoding.py
+

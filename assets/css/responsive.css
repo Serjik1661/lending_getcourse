@@ -337,6 +337,13 @@
     padding-top: 38px;
   }
 
+  .hero-lead {
+    font-weight: 600;
+    color: #2f3f2c;
+    line-height: 1.35;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.18);
+  }
+
   .course-video {
     min-height: clamp(200px, 60vw, 320px);
   }
