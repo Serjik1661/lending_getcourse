@@ -291,10 +291,32 @@
     background: url("../images/hero/hero-propolis-background.webp") 62% top / cover no-repeat !important;
   }
 
+  .hero h1 {
+    font-size: clamp(26px, 6.6vw, 36px);
+    line-height: 0.88;
+  }
+
+  .hero-copy {
+    padding-top: 10px;
+  }
+
+  .hero-lead {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.22;
+  }
+
+  .hero-price {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
   .hero-tags {
     grid-template-columns: 1fr;
     width: min(100%, 360px);
     margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 12px;
   }
 
   .cta-band {
