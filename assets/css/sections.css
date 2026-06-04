@@ -1,7 +1,7 @@
 ﻿.hero-copy {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  max-width: 470px;
   margin-top: -38px;
 }
 
@@ -10,19 +10,20 @@
 }
 
 .hero-title {
-  max-width: 680px;
+  max-width: 470px;
   line-height: 0.96;
   letter-spacing: -0.025em;
   margin-top: 0;
+  text-wrap: balance;
 }
 
 .hero-line {
   display: block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-lead {
-  max-width: 620px;
+  max-width: 470px;
   margin-top: 16px;
   font-size: clamp(18px, 1.6vw, 22px);
   color: #465441;
@@ -52,7 +53,6 @@
   font-weight: 900;
   text-shadow: 0 0 18px rgba(255, 160, 40, 0.44), 0 0 34px rgba(255, 160, 40, 0.28);
 }
-
 .hero-inner {
   position: relative;
 }
@@ -95,7 +95,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  max-width: 650px;
+  max-width: 470px;
   margin: 30px 0 26px;
 }
 
@@ -155,22 +155,16 @@
   position: relative;
   width: 100%;
   margin-inline: auto;
-  padding: clamp(8px, 1vw, 12px);
   border: 1px solid rgba(47, 109, 60, 0.18);
   border-radius: 32px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(243, 248, 237, 0.88));
+  overflow: hidden;
   box-shadow: 0 28px 70px rgba(24, 55, 24, 0.12);
 }
 
 .course-video-card::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  z-index: -1;
-  border-radius: inherit;
-  background:
-    linear-gradient(135deg, rgba(228, 171, 65, 0.26), rgba(47, 109, 60, 0.12));
+  content: none;
 }
 
 .course-video {
@@ -179,9 +173,9 @@
   aspect-ratio: 16 / 9;
   min-height: clamp(340px, 52vw, 660px);
   border: 0;
-  border-radius: 24px;
+  border-radius: inherit;
   background: #0d2d19;
-  object-fit: contain;
+  object-fit: cover;
   pointer-events: auto;
   touch-action: auto;
 }
@@ -673,3 +667,4 @@
   margin-inline: auto;
   text-align: center;
 }
+

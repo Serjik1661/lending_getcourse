@@ -1,27 +1,27 @@
-const CACHE_NAME = "propolis-static-v3";
+﻿const CACHE_NAME = "propolis-static-v4";
 const LOCAL_ASSETS = [
-  "/",
-  "/404.html",
-  "/offline.html",
-  "/assets/css/reset.css",
-  "/assets/css/variables.css",
-  "/assets/css/base.css",
-  "/assets/css/layout.css",
-  "/assets/css/components.css",
-  "/assets/css/sections.css",
-  "/assets/css/forms.css",
-  "/assets/css/legal.css",
-  "/assets/css/responsive.css",
-  "/assets/css/styles.css",
-  "/assets/images/course/course-video-poster.jpg",
-  "/assets/js/utils.js",
-  "/assets/js/menu.js",
-  "/assets/js/site.js",
-  "/assets/js/cookie-consent.js",
-  "/assets/js/register-sw.js",
-  "/assets/js/offline.js",
-  "/assets/icons/favicon.svg",
-  "/assets/icons/logo-doctor.webp"
+  "./",
+  "404.html",
+  "offline.html",
+  "assets/css/reset.css",
+  "assets/css/variables.css",
+  "assets/css/base.css",
+  "assets/css/layout.css",
+  "assets/css/components.css",
+  "assets/css/sections.css",
+  "assets/css/forms.css",
+  "assets/css/legal.css",
+  "assets/css/responsive.css",
+  "assets/css/styles.css",
+  "assets/images/course/course-video-poster.jpg",
+  "assets/js/utils.js",
+  "assets/js/menu.js",
+  "assets/js/site.js",
+  "assets/js/cookie-consent.js",
+  "assets/js/register-sw.js",
+  "assets/js/offline.js",
+  "assets/icons/favicon.svg",
+  "assets/icons/logo-doctor.webp"
 ];
 
 self.addEventListener("install", (event) => {
@@ -49,16 +49,20 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
   if (url.search) return;
+  const scopePath = new URL(self.registration.scope).pathname;
+  const relativePath = url.pathname.startsWith(scopePath)
+    ? url.pathname.slice(scopePath.length)
+    : url.pathname.replace(/^\//, "");
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).catch(() => caches.match("/offline.html"))
+      fetch(request).catch(() => caches.match("offline.html"))
     );
     return;
   }
 
-  const isLocalAsset = url.pathname.startsWith("/assets/");
-  if (!isLocalAsset && !LOCAL_ASSETS.includes(url.pathname)) return;
+  const isLocalAsset = relativePath.startsWith("assets/");
+  if (!isLocalAsset && !LOCAL_ASSETS.includes(relativePath)) return;
 
   event.respondWith(
     caches.match(request).then((cachedResponse) => {
@@ -76,3 +80,5 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+
