@@ -3,8 +3,12 @@
 
   if (!("serviceWorker" in navigator)) return;
 
+  const SW_VERSION = "20260604-3";
+
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch((error) => {
+    navigator.serviceWorker.register(`./sw.js?v=${SW_VERSION}`, {
+      updateViaCache: "none",
+    }).catch((error) => {
       console.warn("Service worker registration failed:", error);
     });
   });

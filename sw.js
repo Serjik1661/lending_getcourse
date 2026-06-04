@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = "propolis-static-v4";
+﻿const CACHE_NAME = "propolis-static-v5";
 const LOCAL_ASSETS = [
   "./",
   "404.html",
