@@ -116,6 +116,10 @@
   box-shadow: 0 10px 22px rgba(51, 76, 28, 0.07);
 }
 
+.hero-tags > span:first-child {
+  transform: translateX(18px);
+}
+
 .hero-tags > span > img {
   flex: 0 0 auto;
   width: 26px;

@@ -107,6 +107,10 @@
     grid-template-columns: 1fr;
   }
 
+  .hero-tags > span:first-child {
+    transform: none;
+  }
+
   .video-section {
     padding-top: 24px;
     padding-bottom: 42px;
@@ -317,6 +321,10 @@
     margin-inline: auto;
     margin-top: 10px;
     margin-bottom: 12px;
+  }
+
+  .hero-tags > span:first-child {
+    transform: none;
   }
 
   .cta-band {
