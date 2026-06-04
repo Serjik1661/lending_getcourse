@@ -103,10 +103,10 @@
 .hero-tags span {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
   min-height: 58px;
-  padding: 11px 13px;
+  padding: 11px 12px;
   border: 1px solid rgba(47, 109, 60, 0.12);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.76);
