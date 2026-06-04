@@ -126,11 +126,6 @@
   line-height: 1.12;
 }
 
-.hero-tag-label--limits {
-  max-width: 12ch;
-  text-wrap: balance;
-}
-
 .video-section {
   padding-top: clamp(28px, 4vw, 56px);
   padding-bottom: clamp(38px, 5vw, 72px);
