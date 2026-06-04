@@ -3,7 +3,7 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  const SW_VERSION = "20260604-5";
+  const SW_VERSION = "20260604-6";
 
   window.addEventListener("load", () => {
     navigator.serviceWorker.register(`./sw.js?v=${SW_VERSION}`, {

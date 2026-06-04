@@ -293,7 +293,8 @@
 
   .hero-tags {
     grid-template-columns: 1fr;
-    width: calc(100% - 12px);
+    width: min(100%, 360px);
+    margin-inline: auto;
   }
 
   .cta-band {
