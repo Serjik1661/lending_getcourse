@@ -1,7 +1,7 @@
 ﻿.hero-copy {
   position: relative;
   z-index: 2;
-  max-width: 470px;
+  max-width: 540px;
   margin-top: -38px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .hero-title {
-  max-width: 470px;
+  max-width: 540px;
   line-height: 0.96;
   letter-spacing: -0.025em;
   margin-top: 0;
@@ -23,7 +23,7 @@
 }
 
 .hero-lead {
-  max-width: 470px;
+  max-width: 540px;
   margin-top: 16px;
   font-size: clamp(18px, 1.6vw, 22px);
   color: #465441;
@@ -95,7 +95,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  max-width: 470px;
+  max-width: 540px;
   margin: 30px 0 26px;
 }
 
