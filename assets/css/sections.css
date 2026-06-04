@@ -99,7 +99,7 @@
   margin: 28px 0 22px;
 }
 
-.hero-tags span {
+.hero-tags > span {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -116,16 +116,22 @@
   box-shadow: 0 10px 22px rgba(51, 76, 28, 0.07);
 }
 
-.hero-tags img {
+.hero-tags > span > img {
   flex: 0 0 auto;
   width: 26px;
   height: 26px;
   object-fit: contain;
 }
 
-.hero-tag-label {
+.hero-tags > span > .hero-tag-label {
   display: block;
   min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
   line-height: 1.22;
   text-wrap: balance;
   word-break: normal;
