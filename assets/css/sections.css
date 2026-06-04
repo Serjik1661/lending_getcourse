@@ -93,9 +93,9 @@
 }
 .hero-tags {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr) minmax(0, 0.95fr);
   gap: 12px;
-  max-width: 540px;
+  max-width: 600px;
   margin: 30px 0 26px;
 }
 
@@ -103,6 +103,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
   min-height: 58px;
   padding: 11px 13px;
   border: 1px solid rgba(47, 109, 60, 0.12);
@@ -123,6 +124,7 @@
 
 .hero-tag-label {
   display: block;
+  min-width: 0;
   line-height: 1.12;
 }
 
