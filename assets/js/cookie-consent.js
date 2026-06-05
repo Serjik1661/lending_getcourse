@@ -92,13 +92,7 @@
       acceptNecessary
     );
 
-    const detailsLink = document.createElement("a");
-    detailsLink.className = "cookie-banner__link";
-    detailsLink.href = PRIVACY_URL;
-    detailsLink.textContent = "Подробнее";
-    detailsLink.setAttribute("aria-label", "Подробнее о cookie в Политике конфиденциальности");
-
-    actions.append(acceptButton, necessaryButton, detailsLink);
+    actions.append(acceptButton, necessaryButton);
     content.append(text, actions);
     banner.append(content);
     document.body.append(banner);

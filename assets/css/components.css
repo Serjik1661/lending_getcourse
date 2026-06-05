@@ -467,7 +467,7 @@
   }
 
   .cookie-banner__text {
-    display: none;
+    font-size: 0.8rem;
   }
 
   .cookie-banner__actions,
@@ -508,7 +508,7 @@
   }
 
   .cookie-banner__text {
-    display: none;
+    font-size: 0.78rem;
   }
 
   .cookie-banner__button,
